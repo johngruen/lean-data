@@ -1,0 +1,135 @@
+.jumbotron {
+  margin-top: 60px;
+  background: #9bc;
+  background-image: url(../images/bg.png);
+  background-size:cover;
+  h1 {
+    font-weight: 500;
+    font-size: 100px;
+  }
+}
+
+
+.section-header {
+  margin: 0 0 60px 0;
+  h2 {
+    font-size: 36px;
+    font-weight: 300;
+  }
+}
+
+.image-holder {
+  background: #4495DD;
+  margin: 10px auto;
+}
+
+.piggy-bg {
+  background: url(../images/piggy.png) no-repeat right bottom;
+  background-size: 280px auto;
+  padding: 20px 0 40px 0; 
+}
+
+h3 {
+  font-weight:300;
+}
+
+.padded {
+  padding: 40px 0 0 0;
+}
+
+.dot-border {
+  color: #fff !important;
+  border-radius: 20px;
+  position: relative;
+  padding:20px 40px;
+  background: #424F5A;
+}
+
+.dot-border:after {
+  content: '';
+  width:0;
+  height:0;
+  right: -30px;
+  top: 38%;
+  position: absolute;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  border-left: 31px solid #424F5A;
+}
+
+
+.chunk {
+  background: #fafafa;
+  margin: 0 0 60px 0;
+  padding: 100px 0;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.white-block {
+  background: #fff;
+  margin:15px;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+.special-quote {
+  color: #fff;
+  background: #0095DD;
+  display: block;
+  padding:20px;
+  width:200px;
+  height:94px;
+  margin: 0 auto 20px auto;
+  border-radius: 10px;
+  position: relative;
+  font-size: 54px;
+  font-weight:100;
+}
+
+.special-quote:after {
+  content: '';
+  width:0;
+  height:0;
+  right: 8px;
+  top:94px;
+  left:90px;
+  position: absolute;
+  border-left: 14px solid transparent;
+  border-right: 14px solid transparent;
+  border-top: 15px solid #0095DD;
+}
+
+.how-container {
+  .row {
+    margin:40px 0;
+    padding: 20px 20px 40px 20px;
+    border-bottom: 1px dashed #ddd;
+    b {
+      display: block;
+      font-size: 20px;
+      margin: 0 0 5px 0;
+    }
+    h3 {
+      font-weight: 100;
+      font-size: 48px;
+    }
+
+    }
+  .lead {
+    border-radius:10px;
+    font-size: 24px;
+    display: inline-block;
+    PADDING:40px 40px 20px 40px;
+  }
+  li {
+    font-size: 20px;
+    margin: 0 0 15px 0;
+  }
+}
+
+.img {
+  height: 160px;
+  background: #ded;
+  margin: 20px auto;
+}
