@@ -10,6 +10,12 @@ module.exports = function(grunt) {
       }
     },
 
+    clean: {
+      bower: {
+        src: ['./components']
+      }
+    },
+
     jshint: {
       all: ['Gruntfile.js', 'src/scripts/*.js']
     },
@@ -96,17 +102,18 @@ module.exports = function(grunt) {
   });
 
   // Load the plugin that provides the 'uglify' task.
-  grunt.loadNpmTasks('grunt-contrib-copy');
-  grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-contrib-jshint');
-  grunt.loadNpmTasks('grunt-contrib-jade');
-  grunt.loadNpmTasks('grunt-contrib-connect');
-  grunt.loadNpmTasks('grunt-bower-task');
-  grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-autoprefixer');
+  grunt.loadNpmTasks('grunt-bower-task');
+  grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-contrib-jade');
+  grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
   // Default task(s).
-  grunt.registerTask('build', ['bower','jshint','jade','sass','autoprefixer','copy']);
+  grunt.registerTask('build', ['bower','jshint','jade','sass','autoprefixer','copy','clean']);
   grunt.registerTask('serve', ['connect','watch']);
 
 };

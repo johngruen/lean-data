@@ -1,11 +1,52 @@
+h1,h2,h3,h4,h5,h6 {
+  text-shadow: 0 1px 0 #eee;
+}
+
 .jumbotron {
   margin-top: 60px;
-  background: #9bc;
-  background-image: url(../images/bg.png);
+  background: #aed url(../images/bg.png);
   background-size:cover;
+  box-shadow: 0 -2px 4px #9dc inset;
   h1 {
-    font-weight: 500;
+    font-weight: 100;
     font-size: 100px;
+  }
+  .foot-jumbotron {
+      box-shadow: 0 2px 4px #9dc inset;
+  }
+}
+
+.link-box {
+  background: rgba(50,50,50,.33);
+  border-radius: 10px;
+  margin-top: 40px;
+  box-shadow: #888 0 2px 2px inset;
+  transition: background .125s;
+  &:hover {
+    background: rgba(50,50,50,.44);
+    img {
+    margin-top: -5px;
+    }
+  }
+  h4 {
+    
+  }
+  img {
+    width:150px;
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    transition: top .125s;
+  }
+  h4 {
+    color: #FFF;
+    text-shadow: none;
+    font-weight:300;
+    padding:20px;
+    &:hover {
+      text-decoration: none !important;
+    }
   }
 }
 
@@ -19,7 +60,7 @@
 }
 
 .image-holder {
-  background: #4495DD;
+  background: #D79;
   margin: 10px auto;
 }
 
@@ -38,11 +79,11 @@ h3 {
 }
 
 .dot-border {
-  color: #fff !important;
   border-radius: 20px;
   position: relative;
   padding:20px 40px;
-  background: #424F5A;
+  background: #f2f2f2;
+  border-bottom: 1px solid #ddd;
 }
 
 .dot-border:after {
@@ -54,16 +95,22 @@ h3 {
   position: absolute;
   border-top: 30px solid transparent;
   border-bottom: 30px solid transparent;
-  border-left: 31px solid #424F5A;
+  border-left: 31px solid #f2f2f2;
 }
 
 
 .chunk {
-  background: #fafafa;
+  background: #dadadF;
   margin: 0 0 60px 0;
-  padding: 100px 0;
+  padding: 60px 0;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
+  box-shadow: 0 2px 2px #ccc inset,0 2px 2px #bbb;
+  h2 {
+    font-size: 60px;
+    font-weight: 100;
+    margin-left:-20px;
+  }
 }
 
 .white-block {
@@ -71,11 +118,17 @@ h3 {
   margin:15px;
   padding: 20px;
   border: 1px solid #ddd;
+  border-radius: 3px;
+  box-shadow: 0 2px 2px #ccc;
+  p {
+    font-size: 20px;
+    margin:10px;
+  }
 }
 
 .special-quote {
   color: #fff;
-  background: #0095DD;
+  background: #FA6;
   display: block;
   padding:20px;
   width:200px;
@@ -97,19 +150,15 @@ h3 {
   position: absolute;
   border-left: 14px solid transparent;
   border-right: 14px solid transparent;
-  border-top: 15px solid #0095DD;
+  border-top: 15px solid #FA6;
 }
 
 .how-container {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 4px #ddd;
+  padding:40px;
   .row {
-    margin:40px 0;
-    padding: 20px 20px 40px 20px;
-    border-bottom: 1px dashed #ddd;
-    b {
-      display: block;
-      font-size: 20px;
-      margin: 0 0 5px 0;
-    }
     h3 {
       font-weight: 100;
       font-size: 48px;
@@ -120,7 +169,7 @@ h3 {
     border-radius:10px;
     font-size: 24px;
     display: inline-block;
-    PADDING:40px 40px 20px 40px;
+    padding: 20px;
   }
   li {
     font-size: 20px;
@@ -129,7 +178,7 @@ h3 {
 }
 
 .img {
-  height: 160px;
-  background: #ded;
+  height: 200px;
+  background: #aed;
   margin: 20px auto;
 }

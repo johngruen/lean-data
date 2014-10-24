@@ -15,7 +15,9 @@
   ],
   "dependencies": {
     "jquery": "~2.1.1",
-    "skrollr": "~0.6.27",
-    "normalize.css": "~3.0.2"
+    "normalize.css": "~3.0.2",
+    "parallax": "~2.1.3",
+    "jquery-waypoints": "~2.0.5",
+    "bootstrap-sass-official": "~3.2.0"
   }
 }

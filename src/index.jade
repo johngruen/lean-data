@@ -18,13 +18,15 @@ html.no-js
     <![endif]-->
 
     //- Add your site or application content here
-    include templates/header.jade
-    include templates/intro.jade
-    include templates/steps.jade
-    include templates/downloads.jade
-    include templates/footer.jade
+    div#skrollr-body
+      include templates/header.jade
+      include templates/intro.jade
+      include templates/steps.jade
+      include templates/downloads.jade
+      include templates/footer.jade
 
     script(src='lib/jquery/jquery.js')
     script(src='lib/skrollr/skrollr.js')
+    script(src='scripts/main.js')
     script(src='//localhost:35729/livereload.js')
 
