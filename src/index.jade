@@ -9,14 +9,14 @@ html.no-js
     link(rel='stylesheet' content='//code.cdn.mozilla.net/fonts/fira.css')
     link(rel='stylesheet', href='lib/bootstrap/bootstrap.css')
     link(rel='stylesheet', href='styles/main.css')
+    link(rel='stylesheet' href='https://mozorg.cdn.mozilla.net/media/css/tabzilla-min.css')
   body
     <!--[if lt IE 8]>
     p.browsehappy
       | You are using an <strong>outdated</strong> browser.
       | Please <a href="http://browsehappy.com/">upgrade your browser</a>
       | to improve your experience.
-    <![endif]-->
-
+    <![endif]--> 
     //- Add your site or application content here
     div#skrollr-body
       include templates/header.jade
@@ -25,8 +25,10 @@ html.no-js
       include templates/downloads.jade
       include templates/footer.jade
 
+
     script(src='lib/jquery/jquery.js')
     script(src='lib/skrollr/skrollr.js')
     script(src='scripts/main.js')
+    script(src='https://mozorg.cdn.mozilla.net/tabzilla/tabzilla.js')
     script(src='//localhost:35729/livereload.js')
 
